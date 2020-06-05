@@ -5,6 +5,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
 import projects.jaseem.fragmentexample.di.ViewModelKey
+import projects.jaseem.fragmentexample.ui.listfragment.ListViewModel
 import projects.jaseem.fragmentexample.ui.main.MainViewModel
 
 
@@ -14,6 +15,11 @@ abstract class MainViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(MainViewModel::class)
-    public abstract fun bindMainViewModel(viewModel: MainViewModel): ViewModel
+    abstract fun bindMainViewModel(viewModel: MainViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ListViewModel::class)
+    abstract fun bindsListViewModel(viewModel: ListViewModel): ViewModel
 
 }

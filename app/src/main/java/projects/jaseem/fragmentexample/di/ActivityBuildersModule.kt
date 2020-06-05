@@ -2,7 +2,7 @@ package projects.jaseem.fragmentexample.di
 
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import projects.jaseem.fragmentexample.MainActivity
+import projects.jaseem.fragmentexample.ui.MainActivity
 import projects.jaseem.fragmentexample.di.main.MainFragmentBuildersModule
 import projects.jaseem.fragmentexample.di.main.MainViewModelModule
 
